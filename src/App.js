@@ -1,11 +1,8 @@
-import './App.css';
+import MinhasRotas from "./minhasRotas";
 
 function App() {
   return (
-    <>
-    <h1>Olá Sala</h1>
-    <p>Venha estudar na Fatec!</p>
-    </>
+    <MinhasRotas />
   );
 }
 
