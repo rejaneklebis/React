@@ -1,0 +1,63 @@
+/* ========== CONTAINER PRINCIPAL ========== */
+.atv01-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #0caff5,
+    #2c5364
+  ); /* azul a petróleo */
+  font-family: "Poppins", sans-serif;
+  color: #f1f5f9;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ========== TÍTULO ========== */
+.atv01-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #38f6d6;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  animation: fadeInDown 0.6s ease-out both;
+}
+
+/* ========== LINK (BOTÃO) ========== */
+.atv01-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #38f6d6;
+  color: #0f172a;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 250ms ease;
+  box-shadow: 0 4px 12px rgba(56, 246, 214, 0.3);
+}
+
+.atv01-link:hover {
+  background-color: #5fffe1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 246, 214, 0.4);
+}
+
+.atv01-link:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(56, 246, 214, 0.25);
+}
+
+/* ========== ANIMAÇÃO ========== */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

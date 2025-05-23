@@ -1,0 +1,31 @@
+/* LETREIRO - Container principal */
+.letreiro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  margin: 2rem;
+}
+
+.letreiro-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #38f6d6;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #38f6d6;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}

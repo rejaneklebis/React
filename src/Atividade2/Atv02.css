@@ -1,0 +1,203 @@
+/* Container principal */
+.atv02-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #c3e5f5, #e8eaf6);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Cartão central com glassmorphism */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 400px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: #111827;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Topo com título e botão reset */
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.topo h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.reset-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #8b5cf6;
+  transition: transform 0.2s ease;
+}
+
+.reset-btn:hover {
+  transform: rotate(90deg);
+}
+
+/* Total de pessoas */
+.total-box {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2563eb;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid #cbd5e1;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Seção dos gêneros */
+.generos {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Cada gênero */
+.genero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 45%;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem circular */
+.genero img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #e2e8f0;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Estilo base do botão */
+.botao {
+  border: none;
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Botão + */
+.mais {
+  background-color: #10b981;
+}
+
+.mais:hover {
+  background-color: #059669;
+}
+
+/* Botão - */
+.menos {
+  background-color: #ef4444;
+  width: 38px;
+  height: 38px;
+  font-size: 1.3rem;
+}
+
+.menos:hover {
+  background-color: #dc2626;
+}
+
+.botao:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* Contador */
+.valor {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* Título geral */
+.atv02-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+/* Link customizado */
+.atv02-link {
+  font-weight: 600;
+  color: #7c3aed;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: color 0.2s;
+}
+
+.atv02-link:hover {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
+.botao-voltar {
+  display: inline-block;
+  margin: 40px 0;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  background: rgba(124, 58, 237, 0.8);
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.25);
+}
+
+/* Centralizando */
+.botao-voltar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.botao-voltar:hover {
+  background: rgba(124, 58, 237, 1);
+  transform: scale(1.05);
+}
